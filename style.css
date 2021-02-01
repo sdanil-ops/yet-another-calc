@@ -6,11 +6,37 @@
 
 body {
   height: 50vh;
-  background: radial-gradient(circle, cyan, maroon);
-  display: flex;
+  background: radial-gradient(circle, cyan, #00FA9A);
+  display: grid;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
+
+input {
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+
+.operator_btns {
+  display: grid;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.operator {
+  height: auto;
+  width: 60px;
+}
+
 output {
-  margin-left: 10px;
+  height: 30px;
+  background: white;
+  border: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 5px;
+  text-align: center;
 }
