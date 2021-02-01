@@ -1,5 +1,28 @@
-confirm(`Ready to pludge into a math and add two nubers?`);
-let firstNum = +prompt(`Enter first number`);
-let secondNum = +prompt(`Enter second number`);
-let answer = firstNum + secondNum;
-alert ( `Answer is ${firstNum}${secondNum}. Joke! Sure it's ${answer}`);
+let op; //выбранный оператор
+function func() {
+  let result;
+  let firstNum = Number(document.getElementById("firstNum").value)
+  let secondNum = Number(document.getElementById("secondNum").value)
+  switch (op) {
+    case '+':
+      result = firstNum + secondNum
+      break
+    case '-':
+      result = firstNum - secondNum
+      break
+    case '*':
+      result = firstNum * secondNum
+      break
+    case '/':
+      if (secondNum) {
+        result = firstNum / secondNum;
+      } else {
+        result = 'infinity'
+      }
+      break;
+    default:
+      result = 'Choose operation'
+  }
+
+  document.getElementById("result").innerHTML = result;
+}
